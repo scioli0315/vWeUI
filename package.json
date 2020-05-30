@@ -14,7 +14,6 @@
     "serve": "vue-cli-service serve --port 8888",
     "build": "npm run build:example & npm run build:docs & npm run build:lib",
     "build:example": "vue-cli-service build --mode production --target app --dashboard",
-    "build:docs": "vue-cli-service build --mode production --target app --dashboard",
     "build:lib": "vue-cli-service build --mode production --target lib --dashboard --name vWeUI src/index.ts",
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext vue",
     "lint:fix": "eslint --fix --ignore-path .gitignore . --ext ts --ext vue"

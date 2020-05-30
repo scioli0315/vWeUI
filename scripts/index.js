@@ -1,4 +1,6 @@
-const build = process => {
+const pages = require('./pages')
+
+const build = (process) => {
   const configArgv =
     process.env && process.env.npm_config_argv
       ? JSON.parse(process.env.npm_config_argv)
@@ -11,13 +13,7 @@ const build = process => {
 
   if (['docs', 'example'].includes(dir)) {
     config = {
-      pages: {
-        index: {
-          entry: `${dir}/main.ts`,
-          template: `public/index.html`,
-          filename: 'index.html'
-        }
-      },
+      pages: pages,
       publicPath: '',
       outputDir: `dist/${dir}`
     }
