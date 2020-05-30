@@ -4,7 +4,7 @@
   "description": "vue weui",
   "main": "lib/vWeUI.js",
   "types": "src/index.ts",
-  "private": true,
+  "private": false,
   "files": [
     "src",
     "lib",
