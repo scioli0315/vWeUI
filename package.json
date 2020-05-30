@@ -27,9 +27,6 @@
     "url": "git+https://github.com/ScioliGuo/vWeUI.git"
   },
   "homepage": "https://scioliguo.github.io/",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "author": "zhuyankun",
   "license": "MIT",
   "dependencies": {
