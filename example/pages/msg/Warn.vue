@@ -41,7 +41,7 @@ export default defineComponent({
     const router = useRouter()
 
     const goBack = () => {
-      router.history.go(-1)
+      router.go(-1)
     }
 
     return {

@@ -23,12 +23,8 @@
       @onCancel="onClick('cancel')"
       @onMore="onClick('more')"
     >
-      <p class="weui-half-screen-dialog__desc">
-        辅助描述内容，可根据实际需要安排
-      </p>
-      <p class="weui-half-screen-dialog__tips">
-        辅助提示内容，可根据实际需要安排
-      </p>
+      <p class="weui-half-screen-dialog__desc">辅助描述内容，可根据实际需要安排</p>
+      <p class="weui-half-screen-dialog__tips">辅助提示内容，可根据实际需要安排</p>
       <template #ft>
         <Button>辅助操作</Button>
         <Button type="primary">主操作</Button>

@@ -40,7 +40,7 @@
       </div>
 
       <div class="icon_sp_area">
-        <template v-for="v in icons"><Icon :key="v" size="24" :type="v" /></template>
+        <template v-for="v in icons" :key="v"><Icon size="24" :type="v" /></template>
       </div>
     </div>
   </Page>

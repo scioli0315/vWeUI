@@ -27,9 +27,7 @@
         />
       </CellGroup>
 
-      <template #desc>
-        用于丰富原生选择框结构，使其更具有扩展性
-      </template>
+      <template #desc> 用于丰富原生选择框结构，使其更具有扩展性 </template>
       <template #opr>
         <Button type="primary" @onClick="showValue">确定</Button>
       </template>

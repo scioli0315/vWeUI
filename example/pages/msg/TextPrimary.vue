@@ -7,9 +7,7 @@
         >
       </p>
       <template #primary>
-        <p>
-          内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现
-        </p>
+        <p>内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现</p>
       </template>
 
       <template #opr>
@@ -37,7 +35,7 @@ export default defineComponent({
     const router = useRouter()
 
     const goBack = () => {
-      router.history.go(-1)
+      router.go(-1)
     }
 
     return {

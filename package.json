@@ -4,7 +4,7 @@
   "description": "vue weui",
   "main": "lib/vWeUI.js",
   "types": "src/index.ts",
-  "private": false,
+  "private": true,
   "files": [
     "src",
     "lib",
@@ -14,6 +14,7 @@
     "serve": "vue-cli-service serve --port 8888",
     "build": "npm run build:example & npm run build:docs & npm run build:lib",
     "build:example": "vue-cli-service build --mode production --target app --dashboard",
+    "build:docs": "vue-cli-service build --mode production --target app --dashboard",
     "build:lib": "vue-cli-service build --mode production --target lib --dashboard --name vWeUI src/index.ts",
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext vue",
     "lint:fix": "eslint --fix --ignore-path .gitignore . --ext ts --ext vue"
@@ -22,44 +23,38 @@
     "vue",
     "component"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ScioliGuo/vWeUI.git"
-  },
-  "homepage": "https://scioliguo.github.io/",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "author": "zhuyankun",
   "license": "MIT",
   "dependencies": {
-    "core-js": "^3.6.4",
-    "vue": "^3.0.0-beta.15",
-    "vue-router": "^4.0.0-alpha.13"
+    "core-js": "^3.9.0",
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.4"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.3.0",
-    "@typescript-eslint/parser": "^3.3.0",
-    "@vue/cli-plugin-babel": "^4.4.4",
-    "@vue/cli-plugin-eslint": "^4.4.4",
-    "@vue/cli-plugin-router": "^4.4.4",
-    "@vue/cli-plugin-typescript": "^4.4.4",
-    "@vue/cli-service": "^4.4.4",
-    "@vue/compiler-sfc": "^3.0.0-beta.15",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "@vue/cli-plugin-babel": "^4.5.11",
+    "@vue/cli-plugin-eslint": "^4.5.11",
+    "@vue/cli-plugin-router": "^4.5.11",
+    "@vue/cli-plugin-typescript": "^4.5.11",
+    "@vue/cli-service": "^4.5.11",
+    "@vue/compiler-sfc": "^3.0.5",
     "@vue/eslint-config-prettier": "^6.0.0",
-    "@vue/eslint-config-typescript": "^5.0.2",
-    "eslint": "^7.3.0",
-    "eslint-plugin-prettier": "^3.1.4",
+    "@vue/eslint-config-typescript": "^5.1.0",
+    "eslint": "^7.20.0",
+    "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-simple-import-sort": "^5.0.3",
-    "eslint-plugin-vue": "^7.0.0-alpha.6",
-    "husky": "^4.2.5",
-    "less": "^3.11.3",
-    "less-loader": "^6.1.1",
-    "lint-staged": "^10.2.11",
-    "prettier": "^2.0.5",
+    "eslint-plugin-vue": "^7.6.0",
+    "husky": "^4.3.8",
+    "less": "^3.13.1",
+    "less-loader": "^7.3.0",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
     "shelljs": "^0.8.4",
-    "typescript": "^3.9.5",
-    "vue-cli-plugin-vue-next": "^0.1.3"
+    "typescript": "^4.1.5"
   },
   "husky": {
     "hooks": {

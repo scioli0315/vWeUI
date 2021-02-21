@@ -54,7 +54,7 @@
         <a id="showTooltips" class="weui-btn weui-btn_primary" href="javascript:">确定</a>
       </div>
     </div>
-    <div id="js_toast" style="display: none;">
+    <div id="js_toast" style="display: none">
       <div class="weui-mask_transparent"></div>
       <div class="weui-toast">
         <i class="weui-icon-success-no-circle weui-icon_toast"></i>

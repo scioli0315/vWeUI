@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, Ref, ref } from 'vue'
+import { Ref, ref } from 'vue'
 
 import pic160 from '../images/pic_160.png'
 import Page from './common/Page.vue'
@@ -18,7 +18,7 @@ type fileType = {
   status?: number | undefined
 }
 
-export default defineComponent({
+export default {
   components: {
     Page
   },
@@ -55,5 +55,5 @@ export default defineComponent({
       onChange
     }
   }
-})
+}
 </script>

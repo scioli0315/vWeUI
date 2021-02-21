@@ -5,9 +5,7 @@
         <TextArea v-model="value" :maxlength="20" placeholder="请描述你所发生的问题" />
       </CellGroup>
 
-      <template #desc>
-        输入更多内容的输入区域样式展示
-      </template>
+      <template #desc> 输入更多内容的输入区域样式展示 </template>
       <template #opr>
         <Button type="primary" @onClick="showValue">确定</Button>
       </template>

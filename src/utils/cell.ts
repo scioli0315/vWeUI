@@ -1,4 +1,4 @@
-import { h, VNode, VNodeProps } from 'vue'
+import { h, VNode } from 'vue'
 
 type OnClick = (event: Event) => void
 type Children = VNode | string | Array<VNode | string>
@@ -9,7 +9,7 @@ export const getCell = (
   cla = '',
   type = 'div'
 ) => {
-  const rawProps: VNodeProps = {
+  const rawProps: any = {
     class: `weui-cell ${cla}`
   }
   if (onClick) {

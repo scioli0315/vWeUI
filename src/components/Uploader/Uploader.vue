@@ -46,14 +46,6 @@ import { stopPropagation } from '../../utils'
 import Gallery from '../Gallery'
 import Item from './Item'
 
-type fileType = {
-  src?: string
-  data?: string | ArrayBuffer
-  status: number | undefined
-}
-
-type filesType = Array<fileType>
-
 export default defineComponent({
   name: 'Uploader',
 
