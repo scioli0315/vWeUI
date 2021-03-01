@@ -37,7 +37,7 @@ const createInstance = (type: ToastType, message: ToastMessage | ToastOptions) =
   app.mount(el)
 
   setTimeout(() => {
-    app.unmount(el)
+    app.unmount()
     el.remove()
   }, duration + 300)
 }
