@@ -22,7 +22,7 @@ module.exports = {
   rules: {
     'no-console': 'off',
     'no-debugger': 'off',
-    'simple-import-sort/sort': 'error',
+    'simple-import-sort/imports': 'error',
     'vue/no-v-model-argument': 'off',
     'vue/no-multiple-template-root': 'off',
     'vue/prop-name-casing': 'off',
